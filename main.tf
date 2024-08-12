@@ -7,8 +7,8 @@ provider "aws" {
 resource "aws_instance" "one" {
   ami           = "ami-0d473344347276854"
   instance_type = "t2.micro"
-  key_pair = "My23-10-2023"
-  availability_zone = "ap-south-1b"
+  key_name = "My23-10-2023"
+  availability_zone = "ap-south-1a"
   tags= {
     Name = "surya"
   }

@@ -1,15 +1,15 @@
 provider "aws" {
-  region = "ap-south-1"
-  access_key = "AKIA2QOABJPQLXMKMJCR"
-  secret_key = "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"
+  region = "us-east-1"
+  access_key = "AKIAYZZGS3A2PBDVZV62"
+  secret_key = "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"
 }
 
 resource "aws_instance" "one" {
-  ami           = "ami-0d473344347276854"
+  ami           = "ami-0a5c3558529277641"
   instance_type = "t2.micro"
-  key_name = "My23-10-2023"
-  availability_zone = "ap-south-1a"
+  key_name = "19-09-2024_infra"
+  availability_zone = "us-east-1d"
   tags= {
-    Name = "surya"
+    Name = "surya-tf"
   }
 }
